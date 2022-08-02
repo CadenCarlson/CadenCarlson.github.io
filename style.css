@@ -63,7 +63,7 @@ header h4{
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: image(/images/heroImage.JPG);
+    background: url("/images/heroImage.jpg");
     background-size: cover;
     position:relative;
 }
