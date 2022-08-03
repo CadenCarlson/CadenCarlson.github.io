@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -63,7 +63,7 @@ header h4{
 /* hero background image */
 .bgimage {
     height:100vh;
-    background-image: url("images/heroImage.jpg");
+    background-image: url("/img/heroImage.JPG");
     background-size: cover;
     position:relative;
 }
