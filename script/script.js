@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         logoSpan.forEach((span, idx) => {
             setTimeout(()=>{
                 span.classList.add('active');
-            }, (idx + 1) * 400)
+            }, (idx + 1) * 200)
         });
     
     setTimeout(()=>{
@@ -19,13 +19,13 @@ window.addEventListener('DOMContentLoaded', ()=>{
             setTimeout(()=>{
                 span.classList.remove('active');
                 span.classList.add('fade');
-            }, (idx + 1) * 50)
+            }, (idx + 1) * 25)
            })
-       }, 1250);
+       }, 1000);
 
        setTimeout(()=>{
            intro.style.top = '-100vh';
-       }, 2000)
+       }, 1500)
     })
 })
 
@@ -39,7 +39,7 @@ var skillVar = document.getElementById('skillDiv');
 //imported version using a csv
 var data;
 var allParents;
-Plotly.d3.csv('/docs/Carlson-Skills.csv', function(err, rows){
+Plotly.d3.csv('./docs/Carlson-Skills.csv', function(err, rows){
   function unpack(rows, key) {
     return rows.map(function(row) { return row[key]; });
   };

@@ -83,7 +83,7 @@ header h4{
 .hero_desc {
     background-color: rgba(177, 177, 177, 0.682);
     border: 5px solid #000000;
-    font-size: 2.73rem;
+    font-size: 2.69rem;
     font-weight: 1000;
 }
 .hero-text {
@@ -110,6 +110,10 @@ header h4{
 .skillDiv {
     height: 75vh;
     width: 0vw;;
+}
+
+.portfolioImage {
+    width: 75vh;
 }
 
 /* social media icons styling */
