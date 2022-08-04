@@ -39,7 +39,7 @@ var skillVar = document.getElementById('skillDiv');
 //imported version using a csv
 var data;
 var allParents;
-Plotly.d3.csv('https://raw.githubusercontent.com/CadenCarlson/CadenCarlson.github.io/main/docs/Carlson-Skills.csv', function(err, rows){
+Plotly.d3.csv('./docs/Carlson-Skills.csv', function(err, rows){
   function unpack(rows, key) {
     return rows.map(function(row) { return row[key]; });
   };
