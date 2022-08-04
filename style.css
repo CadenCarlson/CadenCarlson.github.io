@@ -116,6 +116,18 @@ header h4{
     width: 75vh;
 }
 
+.see-more {
+    color: #000000;
+    font: bold;
+    text-decoration: none;
+}
+
+.see-more-button {
+    padding: 5px 5px;
+    border-radius: 4px;
+    background-color: #98c9e8cf; 
+}
+
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
