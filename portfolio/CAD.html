@@ -5,8 +5,154 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- linking css file -->
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <!-- linking css file 
+  <link rel="stylesheet" type="text/css" href="../style.css">-->
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Splash Screen */
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background-image: url("./img/heroImage.JPG");
+    background-size: cover;
+    position:relative;
+}
+
+.spacer {
+    opacity: 0;
+    font-size: 10rem;
+}
+
+/* text css above hero image*/
+.hero_title {
+    background-color: rgba(177, 177, 177, 0.682);
+    border: 5px solid #000000;
+    font-size: 5.72rem;
+    font-weight: 1000;
+}
+.hero_desc {
+    background-color: rgba(177, 177, 177, 0.682);
+    border: 5px solid #000000;
+    font-size: 2.69rem;
+    font-weight: 1000;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+}
+
+.greybgimage {
+    height:80vh;
+    background: rgb(164, 171, 176);
+    background-size: cover;
+    position:relative;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* skills section css */
+.skillDiv {
+    height: 75vh;
+    width: 0vw;;
+}
+
+.portfolioImage {
+    width: 75vh;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #378cd7;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: rgb(143, 151, 157);
+    height: 4vh;
+    text-align: center;
+}
+
+/* spacing on all sections */
+#about, #skills, #portfolio, #contact {
+    margin-top: 2rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+  </style>
 
 
   <!-- bootstrap CDN -->
@@ -79,11 +225,18 @@
                 </div>
                 <hr>
                 <div class="col-md-6">
+                    <img src="../img/PennerTub.jpg" alt="" width="100%" height="360">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Finished 1/4 Scale Model of Penner Spa</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div class="sketchfab-embed-wrapper"> 
-                        <iframe width="100%" height="360" title="Creighton Cookie Cutter" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/fba1943866654beaa9c97cb15f3be039/embed"> </iframe>
+                        <iframe width="100%" height="360" title="Dryer Full Assembly V1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/306b8615a42b4614a72e31089a9e83a3/embed"> </iframe>
                     </div>
                     <div class="caption">
-                        <p>Creighton Bluejay Cookie Cutter</p>
+                        <p>NECO Grain Dryer</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -104,20 +257,20 @@
                 </div>
                 <div class="col-md-6">
                     <div class="sketchfab-embed-wrapper"> 
-                        <iframe width="100%" height="360" title="Dryer Full Assembly V1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/306b8615a42b4614a72e31089a9e83a3/embed"> </iframe>
+                        <iframe width="100%" height="360" title="Pole Vault Standard Mold" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b58f7fe3642a4fa29807ddac9c39f61f/embed"> </iframe>
                     </div>
                     <div class="caption">
-                        <p>NECO Grain Dryer</p>
+                        <p>Pole Vault Standard Mold</p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="../img/PennerTub.jpg" alt="" width="100%" height="360">
+                    <div class="sketchfab-embed-wrapper"> 
+                        <iframe width="100%" height="360" title="Creighton Cookie Cutter" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/fba1943866654beaa9c97cb15f3be039/embed"> </iframe>
+                    </div>
                     <div class="caption">
-                        <h6> </h6>
-                        <p>Finished 1/4 Scale Model of Penner Spa</p>
+                        <p>Creighton Bluejay Cookie Cutter</p>
                     </div>
                 </div>
-                
 
     </section>
 
