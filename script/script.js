@@ -3,6 +3,12 @@ let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 let nav = document.querySelector('.navbar');
 let LastScrollY = window.scrollY;
+var NavbarHome = document.getElementById("navbarHome");
+var NavbarAbout = document.getElementById("navbarAbout");
+var NavbarSkills = document.getElementById("navbarSkills");
+var NavbarPortfolio = document.getElementById("navbarPortfolio");
+var NavbarContact = document.getElementById("navbarContact");
+let lastHighlight = NavbarHome;
 
 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -29,12 +35,37 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 
+window.addEventListener('scroll', ()=>{
+    LastScrollY = window.scrollY;
+    if (LastScrollY >= 0 && LastScrollY < 500){
+        lastHighlight.classList.remove('navbar-highlight');
+        lastHighlight.classList.add('text-white');
+        NavbarHome.classList.remove('text-white');
+        NavbarHome.classList.add('navbar-highlight');
+        lastHighlight = NavbarHome;
+    } else if (LastScrollY >= 500 && LastScrollY < 1100){
+        lastHighlight.classList.remove('navbar-highlight');
+        lastHighlight.classList.add('text-white');
+        NavbarAbout.classList.remove('text-white');
+        NavbarAbout.classList.add('navbar-highlight');
+        lastHighlight = NavbarAbout;
+    } else if (LastScrollY >= 1100 && LastScrollY < 1750){
+        lastHighlight.classList.remove('navbar-highlight');
+        lastHighlight.classList.add('text-white');
+        NavbarSkills.classList.remove('text-white');
+        NavbarSkills.classList.add('navbar-highlight');
+        lastHighlight = NavbarSkills;
+    } else if (LastScrollY >= 1750 && LastScrollY < 2250){
+        lastHighlight.classList.remove('navbar-highlight');
+        lastHighlight.classList.add('text-white');
+        NavbarPortfolio.classList.remove('text-white');
+        NavbarPortfolio.classList.add('navbar-highlight');
+        lastHighlight = NavbarPortfolio;
+    }
+})
+
 // Karl Parks Pie Chart
 var skillVar = document.getElementById('skillDiv');
-
-//hover events:
-//https://plot.ly/javascript/hover-events/
-//https://community.plot.ly/t/how-to-customize-plotly-tooltip/332/24
 
 //imported version using a csv
 var data;
@@ -45,13 +76,7 @@ Plotly.d3.csv('./docs/Carlson-Skills.csv', function(err, rows){
   };
 
   function addBreaks(manyStrings) {
-    //test code
-    // console.log(manyStrings.length);
-    // stringNum = 8;
-    // numOfWords = manyStrings[stringNum].split(' ').length;
-    // console.log("# Words:" + numOfWords);
-    // console.log(manyStrings[stringNum].replace(/((\w+\W+){5})/, '$1<br/>'));
-
+    
     //looping and resave
     var skipWords = 4;
     var re = new RegExp('((\\w+\\W+){' + skipWords +'})','g');
@@ -82,46 +107,11 @@ Plotly.d3.csv('./docs/Carlson-Skills.csv', function(err, rows){
       }
   ];
 
-// var data = [
-// {
-//   type: "sunburst",
-//   labels: dataImported[0].labels, //combinedLabels
-//   parents: dataImported[0].parents, //combinedParents
-//   // "values":  [65, 14, 12, 10, 2, 6, 6, 4, 4],
-//   leaf: {"opacity": 0.75},
-//   marker: {"line": {"width": 3}},
-//   insidetextorientation: 'radial',
-//   branchvalues: 'total',
-//   // hovertext: ["This is a whoe bunch of useless text that you will never use in your life because this is just a test so ignore the test text if you get what I mean ya know fool? Like don't bother me when I'm testing this shit out okay? I feel like you are all up in my stuff here and I just don't like it okay."],
-//   // hovertemplate:
-//   //   "<b>%{label}</b><br><br>" +
-//   //   "<extra><b>Description:</b>%{hovertext}</extra>",
-//   showlegend: false,
-//   // meta: ["", "", "", "", "", "", "", "MATLAB is the only language taught in the SDSU Aerospace<br> Department and is widely used in several of our lab<br> courses. I am extremely proficient with the MATLAB language and<br> IDE and have developed code in my professional job."],
-//   // hovertemplate: "%{label}<extra>%{meta}</extra>",
-//   // "hoverlabel": {"align": "center"},
-// }];
-
 var layout = {
   "margin": {"l": 0, "r": 0, "b": 0, "t": 0},
 };
 
 Plotly.plot(skillVar, data, layout, {responsive: true, displayModeBar: false})
-
-//Hover interaction
-// var hoverInfo = document.getElementById('hoverinfo');
-// skillVar.on('plotly_hover', function(data){
-//   var xaxis = data.points[0].xaxis,
-//       yaxis = data.points[0].yaxis;
-//
-//   var infotext = data.points.map(function(d){
-//     console.log("Hovering Over: " + d.label);
-//     // hoverInfo.innerHTML = d.meta + "<br>";
-//   });
-// })
-// .on('plotly_unhover', function(data){
-//    // hoverInfo.innerHTML = '';
-// });
 
 //Click interaction
 skillVar.on('plotly_click', function(data){
