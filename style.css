@@ -101,11 +101,11 @@ header h4{
 }
 
 .greybgimage {
-    height:80vh;
     background: rgb(164, 171, 176);
-    background-size: cover;
+    background-size:contain;
     position:relative;
 }
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Portfolio Website-Caden</title>
+  <title>Caden's Portfolio Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- linking css file 
-  <link rel="stylesheet" type="text/css" href="../style.css">-->
+  <link rel="stylesheet" type="text/css" href="style.css">-->
   <style>
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -113,9 +113,10 @@ header h4{
 .greybgimage {
     height:80vh;
     background: rgb(164, 171, 176);
-    background-size: cover;
+    background-size: auto;
     position:relative;
 }
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;
@@ -124,7 +125,8 @@ header h4{
 /* skills section css */
 .skillDiv {
     height: 70vh;
-    width: 0vw;;
+    width: 0vw;
+    justify-content: center;
 }
 
 .portfolioImage {
@@ -181,6 +183,9 @@ header h4{
 
   <!-- Plot.ly -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Icon -->
+  <link rel="icon" sizes="40x40" href="../img/CCicon.ico">
 </head>
 
 <body>
@@ -302,8 +307,8 @@ header h4{
                 </div>
     </section>
 
-    <div class="text-center">
-        <span><button class="see-more-button"><a class="see-more" href="../index.html#portfolio" alt="broken link">Back to Portfolio</a></button></span><button class="see-more-button"><a class="see-more" href="./CAD.html" alt="broken link">Computer-Aided Design</a></button>
+    <div class="container">
+        <span><button class="see-more-button" style="float: left;"><a class="see-more" href="../index.html#portfolio" alt="broken link">Go Back to Portfolio</a></button></span><button class="see-more-button" style="float: right;"><a class="see-more" href="./CAD.html" alt="broken link">Computer-Aided Design</a></button>
     </div>
 
     <section id="contact"></section>

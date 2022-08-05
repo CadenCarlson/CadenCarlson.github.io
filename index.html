@@ -83,7 +83,6 @@ header h4{
     font-size: 10rem;
 }
 
-
 .navbar-highlight {
     color: rgb(190, 190, 190);
 }
@@ -111,16 +110,15 @@ header h4{
 }
 
 .greybgimage {
-    height:80vh;
     background: rgb(164, 171, 176);
-    background-size: cover;
+    background-size:contain;
     position:relative;
 }
+
 /* about section image css */
 .imageAboutPage {
     width: 100%;
 }
-
 /* skills section css */
 .skillDiv {
     height: 70vh;
@@ -182,6 +180,9 @@ header h4{
 
   <!-- Plot.ly -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Icon -->
+  <link rel="icon" sizes="40x40" href="./img/CCicon.ico">
 </head>
 
 
@@ -238,13 +239,16 @@ header h4{
       </div>
     </section>
 
+<hr class="container">
+
     <!-- about section-->
     <section id="about">
-        <div class=" greybgimage container mt-4 pt-4">
+        <div class="container mt-4 pt-4 greybgimage">
             <h1 class="text-center">About Me</h1>
             <div class="row mt-4">
+
                 <div class="col-lg-3">
-                    <img src="img/about.jpg" class= "imageAboutPage" alt="">
+                    <img src="img/about.jpg" class= "imageAboutPage" style="margin-bottom:35px;" alt="">
                 </div>
 
                 <div class="col-lg-8">
@@ -470,7 +474,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
-    if (LastScrollY >= 0 && LastScrollY < 500){
+    let currentLocation = window.location.href;
+    if (currentLocation.includes('index.html')){
+        if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarHome.classList.remove('text-white');
@@ -495,6 +501,8 @@ window.addEventListener('scroll', ()=>{
         NavbarPortfolio.classList.add('navbar-highlight');
         lastHighlight = NavbarPortfolio;
     }
+    }
+    
 })
 
 // Karl Parks Pie Chart

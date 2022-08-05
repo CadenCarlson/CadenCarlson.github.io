@@ -37,7 +37,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
 window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
-    if (LastScrollY >= 0 && LastScrollY < 500){
+    let currentLocation = window.location.href;
+    if (currentLocation.includes('index.html')){
+        if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarHome.classList.remove('text-white');
@@ -62,6 +64,8 @@ window.addEventListener('scroll', ()=>{
         NavbarPortfolio.classList.add('navbar-highlight');
         lastHighlight = NavbarPortfolio;
     }
+    }
+    
 })
 
 // Karl Parks Pie Chart
