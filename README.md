@@ -4,4 +4,4 @@ My name is Caden Carlson and this website is dedicated to displaying information
 
 [Click here to pull it up on the web!](https://cadencarlson.github.io)
 
-Special Thanks to Karl Parks for the inspiration and help with the Skills Chart!
+Special thanks to Karl Parks for the inspiration and help with the Skills Chart!

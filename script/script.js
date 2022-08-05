@@ -38,8 +38,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
 window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
     let currentLocation = window.location.href;
-    console.log(currentLocation);
-    if (currentLocation.includes('index.html')){
+    
+    if (currentLocation.includes('index.html') || currentLocation.lenght <= 22){
+        console.log(currentLocation);
         if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
@@ -63,6 +64,12 @@ window.addEventListener('scroll', ()=>{
         lastHighlight.classList.add('text-white');
         NavbarPortfolio.classList.remove('text-white');
         NavbarPortfolio.classList.add('navbar-highlight');
+        lastHighlight = NavbarPortfolio;
+    } else if (LastScrollY >= 2250 && LastScrollY < 3000){
+        lastHighlight.classList.remove('navbar-highlight');
+        lastHighlight.classList.add('text-white');
+        NavbarContact.classList.remove('text-white');
+        NavbarContact.classList.add('navbar-highlight');
         lastHighlight = NavbarPortfolio;
     }
     }
