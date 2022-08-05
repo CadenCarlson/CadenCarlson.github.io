@@ -339,7 +339,7 @@ header h4{
                         <img class="card-img-top" src="./img/kinect.png" alt="Card image" style="width:100%">
                         <div class="card-body">
                             <h4 class="card-title">Kinect Depth Camera</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="card-text">I programmed a depth camera from a Microsoft Kinect v2 using C/C++.</p>
                             <div class="text-center">
                                 <button class="see-more-button"><a class="see-more" href="./portfolio/Kinect.html" alt="broken link">See More</a></button>
                             </div>
@@ -356,19 +356,7 @@ header h4{
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Contact Me</h1>
-                <div class="row mt-4">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
+            <div>
 
             </div>
         </div>
@@ -422,7 +410,7 @@ window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
     let currentLocation = window.location.href;
     
-    if (currentLocation.includes('index.html')){
+    if (currentLocation.includes('index.html') || currentLocation.lenght <= 22){
         console.log(currentLocation);
         if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
