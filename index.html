@@ -368,14 +368,17 @@ header h4{
                         </div>
                 </div>
             </span>
-
+              
             <span>
                 <div style="float:right;">
                         <div style="margin:auto; text-align:left;">
                             <h4><strong>GitHub: </strong>&nbsp;<a title="GitHub profile will open in new tab" href="https://github.com/CadenCarlson" target="_blank">Caden's Repositories</a></h4>
+                            <h6>View the source code for this site</h6>
                         </div>
                 </div>
             </span>
+
+            <div class="badge-base LI-profile-badge" style="margin-left: 38.5%;" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="caden-carlson-917613194" data-version="v1"></div>
         </div>
     </section>
 
@@ -428,7 +431,7 @@ window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
     let currentLocation = window.location.href;
     
-    if (currentLocation.includes('index.html') || currentLocation.lenght <= 22){
+    if (currentLocation.includes('index.html') || currentLocation.length <= 22){
         console.log(currentLocation);
         if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');

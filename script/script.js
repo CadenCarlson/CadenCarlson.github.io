@@ -39,7 +39,7 @@ window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
     let currentLocation = window.location.href;
     
-    if (currentLocation.includes('index.html') || currentLocation.lenght <= 22){
+    if (currentLocation.includes('index.html') || currentLocation.length <= 22){
         console.log(currentLocation);
         if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
@@ -70,7 +70,7 @@ window.addEventListener('scroll', ()=>{
         lastHighlight.classList.add('text-white');
         NavbarContact.classList.remove('text-white');
         NavbarContact.classList.add('navbar-highlight');
-        lastHighlight = NavbarPortfolio;
+        lastHighlight = NavbarContact;
     }
     }
     
