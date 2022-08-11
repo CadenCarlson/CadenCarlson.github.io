@@ -40,7 +40,7 @@ window.addEventListener('scroll', ()=>{
     let currentLocation = window.location.href;
     
     if (currentLocation.includes('index.html') || currentLocation.length <= 33){
-        console.log(currentLocation);
+        console.log(currentLocation.length);
         if (LastScrollY >= 0 && LastScrollY < 500){
         lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
