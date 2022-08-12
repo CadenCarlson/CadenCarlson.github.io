@@ -5,179 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- linking css file -->
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  
-  <!-- <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header{
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 1005;
-    height: 80px;
-}
-
-header h4{
-    position: absolute;
-    left: 10%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-}
-
-/* Splash Screen */
-
-.intro{
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #161616;
-    transition: 1s;
-}
-
-.logo-header {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-}
-
-.logo {
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
-}
-
-.logo.active {
-    bottom: 0;
-    opacity: 1;
-    transition: ease-in-out 0.5s;
-}
-
-.logo.fade {
-    bottom: 150px;
-    opacity: 0;
-    transition: ease-in-out 0.5s;
-}
-
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background-image: url("./img/heroImage.JPG");
-    background-size: cover;
-    position:relative;
-}
-
-.spacer {
-    opacity: 0;
-    font-size: 10rem;
-}
-
-.navbar-highlight {
-    color: rgb(190, 190, 190);
-}
-
-/* text css above hero image*/
-.hero_title {
-    background-color: rgba(177, 177, 177, 0.682);
-    border: 5px solid #000000;
-    font-size: 5.72rem;
-    font-weight: 1000;
-}
-.hero_desc {
-    background-color: rgba(177, 177, 177, 0.682);
-    border: 5px solid #000000;
-    font-size: 2.69rem;
-    font-weight: 1000;
-}
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-}
-
-.greybgimage {
-    background: rgb(164, 171, 176);
-    background-size:contain;
-    position:relative;
-}
-
-/* about section image css */
-.imageAboutPage {
-    width: 100%;
-}
-/* skills section css */
-.skillDiv {
-    height: 70vh;
-    width: 0vw;
-    justify-content: center;
-}
-
-.portfolioImage {
-    width: 75vh;
-}
-
-.see-more {
-    color: #000000;
-    font: bold;
-    text-decoration: none;
-}
-
-.see-more-button {
-    padding: 5px 5px;
-    border-radius: 4px;
-    background-color: #98c9e8cf; 
-}
-
-/* social media icons styling */
-.social-icons {
-    font-size: 36px;
-    cursor: pointer;
-}
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #378cd7;
-}
-.fab {
-    color: #000000;
-}
-/* footer styling */
-#footer {
-    background-color: rgb(143, 151, 157);
-    height: 4vh;
-    text-align: center;
-}
-
-/* spacing on all sections */
-#about, #skills, #portfolio, #contact {
-    margin-top: 2rem;
-    padding-top: 4rem;
-}
-#contact {
-    padding-bottom: 4rem;
-}
-  </style> -->
-
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+
+  <!-- linking css file -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
 
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
   <!-- Plot.ly -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -199,7 +36,7 @@ header h4{
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll bg-secondary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand navbar-font" href="#">
               Caden Carlson
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,22 +45,22 @@ header h4{
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#home" id="navbarHome">Home</a>
+                        <a class="nav-link text-white navbar-font" href="#home" id="navbarHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about" id="navbarAbout">About</a>
+                        <a class="nav-link text-white navbar-font" href="#about" id="navbarAbout">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#skills" id="navbarSkills">Skills</a>
+                        <a class="nav-link text-white navbar-font" href="#skills" id="navbarSkills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#portfolio" id="navbarPortfolio">Portfolio</a>
+                        <a class="nav-link text-white navbar-font" href="#portfolio" id="navbarPortfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact" id="navbarContact">Connect</a>
+                        <a class="nav-link text-white navbar-font" href="#contact" id="navbarContact">Connect</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link see-more-button text-white" href="./docs/Carlson_Resume_8-22.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                      <a class="nav-link text-white navbar-font" href="./docs/Carlson_Resume_8-22.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                     </li>
                 </ul>
                 
@@ -364,7 +201,8 @@ header h4{
             <span>
                 <div style="float:left;">
                         <div style="margin:auto; text-align:left;">
-                            <h4><strong>Email: </strong>&nbsp;CadenCarlson1@gmail.com</a></h4>
+                            <i class="fa-regular fa-envelope fa-6x" style="color: rgb(90, 90, 90);"></i>
+                            <div style="padding-bottom: 20px;"><caption>CadenCarlson1@gmail.com</caption></div>
                         </div>
                 </div>
             </span>
@@ -372,13 +210,15 @@ header h4{
             <span>
                 <div style="float:right;">
                         <div style="margin:auto; text-align:left;">
-                            <h4><strong>GitHub: </strong>&nbsp;<a title="GitHub profile will open in new tab" href="https://github.com/CadenCarlson" target="_blank">Caden's Repositories</a></h4>
-                            <h6>View the source code for this site</h6>
+                            <button onclick="window.open('https://github.com/CadenCarlson')" type="button" style="border: none;"><i class="fa-brands fa-square-github fa-6x"></i></button>
                         </div>
                 </div>
             </span>
 
-            <div class="badge-base LI-profile-badge" style="margin-left: 38.5%;" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="caden-carlson-917613194" data-version="v1"></div>
+            <div style="margin-left: 47%;">
+                <button onclick="window.open('https://www.linkedin.com/in/caden-carlson-917613194/')" type="button" style="border: none;"><i class="fa-brands fa-linkedin fa-6x"></i></button>
+            </div>
+            
         </div>
     </section>
 
@@ -387,171 +227,11 @@ header h4{
       <p>&copy; Caden Carlson 2022</p>
     </footer>
 
-    <!-- load javascript after loading all html content-->
-    <script src="./script/script.js"></script> 
-    <!-- <script>
-let intro = document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logoSpan = document.querySelectorAll('.logo');
-let nav = document.querySelector('.navbar');
-let LastScrollY = window.scrollY;
-var NavbarHome = document.getElementById("navbarHome");
-var NavbarAbout = document.getElementById("navbarAbout");
-var NavbarSkills = document.getElementById("navbarSkills");
-var NavbarPortfolio = document.getElementById("navbarPortfolio");
-var NavbarContact = document.getElementById("navbarContact");
-let lastHighlight = NavbarHome;
-
-
-window.addEventListener('DOMContentLoaded', ()=>{
-
-    setTimeout(()=>{
-        logoSpan.forEach((span, idx) => {
-            setTimeout(()=>{
-                span.classList.add('active');
-            }, (idx + 1) * 200)
-        });
-    
-    setTimeout(()=>{
-        logoSpan.forEach((span, idx) => {
-            setTimeout(()=>{
-                span.classList.remove('active');
-                span.classList.add('fade');
-            }, (idx + 1) * 25)
-           })
-       }, 1000);
-
-       setTimeout(()=>{
-           intro.style.top = '-100vh';
-       }, 1500)
-    })
-})
-
-window.addEventListener('scroll', ()=>{
-    LastScrollY = window.scrollY;
-    let currentLocation = window.location.href;
-    
-    if (currentLocation.includes('index.html') || currentLocation.length <= 33){
-        console.log(currentLocation);
-        if (LastScrollY >= 0 && LastScrollY < 500){
-        lastHighlight.classList.remove('navbar-highlight');
-        lastHighlight.classList.add('text-white');
-        NavbarHome.classList.remove('text-white');
-        NavbarHome.classList.add('navbar-highlight');
-        lastHighlight = NavbarHome;
-    } else if (LastScrollY >= 500 && LastScrollY < 1300){
-        lastHighlight.classList.remove('navbar-highlight');
-        lastHighlight.classList.add('text-white');
-        NavbarAbout.classList.remove('text-white');
-        NavbarAbout.classList.add('navbar-highlight');
-        lastHighlight = NavbarAbout;
-    } else if (LastScrollY >= 1300 && LastScrollY < 2200){
-        lastHighlight.classList.remove('navbar-highlight');
-        lastHighlight.classList.add('text-white');
-        NavbarSkills.classList.remove('text-white');
-        NavbarSkills.classList.add('navbar-highlight');
-        lastHighlight = NavbarSkills;
-    } else if (LastScrollY >= 2200 && LastScrollY < 2800){
-        lastHighlight.classList.remove('navbar-highlight');
-        lastHighlight.classList.add('text-white');
-        NavbarPortfolio.classList.remove('text-white');
-        NavbarPortfolio.classList.add('navbar-highlight');
-        lastHighlight = NavbarPortfolio;
-    } else if (LastScrollY >= 2800 && LastScrollY < 3000){
-        lastHighlight.classList.remove('navbar-highlight');
-        lastHighlight.classList.add('text-white');
-        NavbarContact.classList.remove('text-white');
-        NavbarContact.classList.add('navbar-highlight');
-        lastHighlight = NavbarContact;
-    }
-    }
-    
-})
-
-// Karl Parks Pie Chart
-var skillVar = document.getElementById('skillDiv');
-
-//imported version using a csv
-var data;
-var allParents;
-Plotly.d3.csv('./docs/Carlson-Skills.csv', function(err, rows){
-  function unpack(rows, key) {
-    return rows.map(function(row) { return row[key]; });
-  };
-
-  function addBreaks(manyStrings) {
-    
-    //looping and resave
-    var skipWords = 4;
-    var re = new RegExp('((\\w+\\W+){' + skipWords +'})','g');
-    var i;
-    for (i = 0; i < manyStrings.length; i++) {
-      //console.log(manyStrings[i].replace(re, '$1<br>'));
-      manyStrings[i] = manyStrings[i].replace(re, '$1<br>');
-    }
-
-    return manyStrings;
-  }
-
-  data = [
-      {
-        type: "sunburst",
-        labels: unpack(rows, 'labels'),
-        parents: (allParents = unpack(rows, 'parents')),
-        textfont: {"color": "black"},
-        insidetextfont: {"color": "white"},
-        // meta: unpack(rows, 'short'),
-        hovertext: addBreaks(unpack(rows, 'short')),
-        hovertemplate: "%{label}<extra>%{hovertext}</extra>",
-        leaf: {"opacity": 0.75},
-        marker: {"line": {"width": 3}},
-        insidetextorientation: 'radial',
-        branchvalues: 'total',
-        hoverlabel: {"align": "left"},
-      }
-  ];
-
-var layout = {
-  "margin": {"l": 0, "r": 0, "b": 0, "t": 0},
-};
-
-Plotly.plot(skillVar, data, layout, {responsive: true, displayModeBar: false})
-
-//Click interaction
-skillVar.on('plotly_click', function(data){
-  var xaxis = data.points[0].xaxis,
-      yaxis = data.points[0].yaxis;
-  var infotext = data.points.map(function(d){
-    console.log('Clicked: ' + d.label);
-    if (allParents.indexOf(d.label) > -1) {
-      changePlotLabel(d.label);
-    }
-    // else {
-    //   if (hoverInfo.innerHTML === undefined) {
-    //     (hoverInfo.innerHTML) = d.meta;
-    //     window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#mySkills";
-    //   }
-    // }
-  });
-});
-
-var prevParent = "";
-function changePlotLabel(clickedLabel){
-  if (clickedLabel != prevParent) {
-    data[0].insidetextorientation = 'horizontal';
-    prevParent = clickedLabel;
-  }
-  else { //need to fix if user clicks to many times
-    data[0].insidetextorientation = 'radial';
-    prevParent = "";
-  }
-};
-
-});
-    </script> -->
-
+    <!-- load javascript after loading all html content 
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>-->
+    <script src="./script/linkedin/profile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
+    <script src="https://kit.fontawesome.com/c5a249634a.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>

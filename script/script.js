@@ -38,38 +38,27 @@ window.addEventListener('DOMContentLoaded', ()=>{
 window.addEventListener('scroll', ()=>{
     LastScrollY = window.scrollY;
     let currentLocation = window.location.href;
-    
     if (currentLocation.includes('index.html') || currentLocation.includes('#')){
         console.log(currentLocation.length);
         if (LastScrollY >= 0 && LastScrollY < 500){
-        lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarHome.classList.remove('text-white');
-        NavbarHome.classList.add('navbar-highlight');
         lastHighlight = NavbarHome;
     } else if (LastScrollY >= 500 && LastScrollY < 1300){
-        lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarAbout.classList.remove('text-white');
-        NavbarAbout.classList.add('navbar-highlight');
         lastHighlight = NavbarAbout;
     } else if (LastScrollY >= 1300 && LastScrollY < 2200){
-        lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarSkills.classList.remove('text-white');
-        NavbarSkills.classList.add('navbar-highlight');
         lastHighlight = NavbarSkills;
     } else if (LastScrollY >= 2200 && LastScrollY < 2800){
-        lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarPortfolio.classList.remove('text-white');
-        NavbarPortfolio.classList.add('navbar-highlight');
         lastHighlight = NavbarPortfolio;
     } else if (LastScrollY >= 2800 && LastScrollY < 3000){
-        lastHighlight.classList.remove('navbar-highlight');
         lastHighlight.classList.add('text-white');
         NavbarContact.classList.remove('text-white');
-        NavbarContact.classList.add('navbar-highlight');
         lastHighlight = NavbarContact;
     }
     }
