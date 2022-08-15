@@ -114,7 +114,7 @@ header h4{
 /* skills section css */
 .skillDiv {
     height: 70vh;
-    width: 0vw;
+    width: 70vh;
     justify-content: center;
 }
 
