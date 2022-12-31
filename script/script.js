@@ -10,60 +10,84 @@ var NavbarPortfolio = document.getElementById("navbarPortfolio");
 var NavbarContact = document.getElementById("navbarContact");
 let lastHighlight = NavbarHome;
 
+// Handles Scroll Animation
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener('DOMContentLoaded', ()=>{
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-    setTimeout(()=>{
-        logoSpan.forEach((span, idx) => {
-            setTimeout(()=>{
-                span.classList.add('active');
-            }, (idx + 1) * 200)
-        });
-    
-    setTimeout(()=>{
-        logoSpan.forEach((span, idx) => {
-            setTimeout(()=>{
-                span.classList.remove('active');
-                span.classList.add('fade');
-            }, (idx + 1) * 25)
-           })
-       }, 1000);
-
-       setTimeout(()=>{
-           intro.style.top = '-100vh';
-       }, 1500)
-    })
-})
-
-window.addEventListener('scroll', ()=>{
-    LastScrollY = window.scrollY;
-    let currentLocation = window.location.href;
-    if (currentLocation.includes('index.html') || currentLocation.includes('#')){
-        console.log(currentLocation.length);
-        if (LastScrollY >= 0 && LastScrollY < 500){
-        lastHighlight.classList.add('text-white');
-        NavbarHome.classList.remove('text-white');
-        lastHighlight = NavbarHome;
-    } else if (LastScrollY >= 500 && LastScrollY < 1300){
-        lastHighlight.classList.add('text-white');
-        NavbarAbout.classList.remove('text-white');
-        lastHighlight = NavbarAbout;
-    } else if (LastScrollY >= 1300 && LastScrollY < 2200){
-        lastHighlight.classList.add('text-white');
-        NavbarSkills.classList.remove('text-white');
-        lastHighlight = NavbarSkills;
-    } else if (LastScrollY >= 2200 && LastScrollY < 2800){
-        lastHighlight.classList.add('text-white');
-        NavbarPortfolio.classList.remove('text-white');
-        lastHighlight = NavbarPortfolio;
-    } else if (LastScrollY >= 2800 && LastScrollY < 3000){
-        lastHighlight.classList.add('text-white');
-        NavbarContact.classList.remove('text-white');
-        lastHighlight = NavbarContact;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
     }
-    }
-    
+  }
+}
+
+// Handles Welcome Animation
+function welcome() {
+  setTimeout(()=>{
+    logoSpan.forEach((span, idx) => {
+        setTimeout(()=>{
+            span.classList.add('active');
+        }, (idx + 1) * 200)
+    });
+
+setTimeout(()=>{
+    logoSpan.forEach((span, idx) => {
+        setTimeout(()=>{
+            span.classList.remove('active');
+            span.classList.add('fade');
+        }, (idx + 1) * 25)
+       })
+   }, 1000);
+
+   setTimeout(()=>{
+       intro.style.top = '-100vh';
+   }, 1500)
 })
+}
+
+// Handles Navbar Highlighting
+function navbarHighlight() {
+  LastScrollY = window.scrollY;
+  let currentLocation = window.location.href;
+  if (currentLocation.includes('index.html') || currentLocation.includes('#')){
+      console.log(currentLocation.length);
+      if (LastScrollY >= 0 && LastScrollY < 500){
+      lastHighlight.classList.add('text-white');
+      NavbarHome.classList.remove('text-white');
+      lastHighlight = NavbarHome;
+  } else if (LastScrollY >= 500 && LastScrollY < 1300){
+      lastHighlight.classList.add('text-white');
+      NavbarAbout.classList.remove('text-white');
+      lastHighlight = NavbarAbout;
+  } else if (LastScrollY >= 1300 && LastScrollY < 2200){
+      lastHighlight.classList.add('text-white');
+      NavbarSkills.classList.remove('text-white');
+      lastHighlight = NavbarSkills;
+  } else if (LastScrollY >= 2200 && LastScrollY < 2800){
+      lastHighlight.classList.add('text-white');
+      NavbarPortfolio.classList.remove('text-white');
+      lastHighlight = NavbarPortfolio;
+  } else if (LastScrollY >= 2800 && LastScrollY < 3000){
+      lastHighlight.classList.add('text-white');
+      NavbarContact.classList.remove('text-white');
+      lastHighlight = NavbarContact;
+  }
+  }
+}
+
+
+// Event Listeners
+window.addEventListener("scroll", reveal);
+window.addEventListener('DOMContentLoaded', welcome);
+window.addEventListener('scroll', navbarHighlight);
+
+
 
 // Karl Parks Pie Chart
 var skillVar = document.getElementById('skillDiv');
