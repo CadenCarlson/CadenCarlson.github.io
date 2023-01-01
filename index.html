@@ -10,7 +10,7 @@
 
   <!-- linking css file -->
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <link rel="stylesheet" type="text/css" href="./aos-master/src/sass/aos.scss">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,11 +147,11 @@
 
     <!-- portfolio section-->
     <section id="portfolio">
-        <div class="container mt-3 aos-item" data-aos="fade-in">
+        <div class="container mt-3">
             <h1 class="text-center">Portfolio</h1>
             <hr class="container">
             <div class="row">
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="0">
                     <div class="card">
                         <img class="card-img-top" src="img/Blender_Animation.PNG" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="card portfolioContent">
                         <img class="card-img-top" src="./img/PennerTub.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -177,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="800">
                     <div class="card portfolioContent">
                         <img class="card-img-top" src="./img/kinect.png" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="0">
                     <div class="card portfolioContent">
                         <img class="card-img-top" src="./img/fbla.png" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -246,11 +246,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/c5a249634a.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-    <script type="module" src="./aos-master/src/js/aos.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    
+
 </body>
 </html>
