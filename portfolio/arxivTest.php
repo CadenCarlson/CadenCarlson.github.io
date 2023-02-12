@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caden's Portfolio Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+      
+        <!-- linking css file -->
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+      
+        <!-- Plot.ly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      
+        <!-- Icon -->
+        <link rel="icon" sizes="40x40" href="./img/CCicon.ico">
+      </head>
+
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              Caden Carlson
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="../docs/Carlson_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Title -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Kinect Depth Camera</h1>
+                    <h4>Grain Weevil Corp.</h4>
+                    <hr>
+                </div>
+                <div class="">
+                    <p>
+                        In order to gather quantitative and qualitative data for a National Science Foundation study, the <a href="https://www.grainweevil.com/" target="_blank">Grain Weevil Corp.</a> was in need of a depth-sensing camera. This camera would be downward facing and used to map out grain elevation within grain storage facilities. As a Research Engineer Intern, I developed this camera from a Microsoft Kinect v2 using a modified driver. I had previous experience writing in C/C++ from my time in competitive robots but that was two years previous and this project posed new, complicated problems. I enjoyed embracing the learning curve as I began to write the necessary code to fit the study parameters. These modifications include live color-coded depth output, numerical depth output, and topographic overlays. I then designed a 3D model of a test bin to determine how and where to mount the depth camera.
+                    <ul>
+                      <li>Expanded knowledge of C/C++.</li>
+                      <li>Assisted in National Science Foundation research.</li>
+                      <li>Created custom color phase algorithm to draw depths.</li>
+                      <li>Utilized OpenCV to identify and draw topographic overlay.</li>
+                      <li>Built and packaged Windows application.</li>
+                    </ul>
+                    </p>
+                </div>
+                <hr>
+                <div class="col-md-6">
+                    <img src="../img/FinalsMat.png" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Depth Camera Output with Topagraphy</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/Topographic.PNG" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Topagraphy Map</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/InitialImage.png" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Raw Depth Camera Output</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sketchfab-embed-wrapper"> 
+                        <iframe width="100%" height="635" title="Test Bin Setup" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/25daf28cdfa24772b93f72f8de5a6708/embed"> </iframe>
+                    </div>
+                    <div class="caption">
+                        <p>Test Bin Setup</p>
+                    </div>
+                </div>
+    </section>

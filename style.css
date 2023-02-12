@@ -5,6 +5,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* CSS HEX 
+--cultured: #f9f9f9ff;
+--battleship-grey: #7c898bff;
+--jet: #343434ff;
+--marigold: #eca72cff;
+--space-cadet: #2b3a67ff; */
+
 header{
     position: relative;
     left: 0;
@@ -24,7 +31,7 @@ header h4{
 
 .intro{
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
@@ -77,8 +84,6 @@ header h4{
     font-family:'Open Sans', sans-serif;
 }
 
-
-
 /* text css above hero image*/
 .hero_title {
     background-color: rgba(177, 177, 177, 0.682);
@@ -111,6 +116,22 @@ header h4{
 .imageAboutPage {
     width: 100%;
 }
+
+.front {
+  z-index: 1;
+}
+/*
+.behind-right {
+  z-index: -1;
+  position: absolute;
+  transform: translate(-10px);
+}
+
+.behind-left {
+  z-index: -1;
+  position: absolute;
+}
+*/
 /* skills section css */
 .skillDiv {
     height: 70vh;
@@ -131,7 +152,7 @@ header h4{
 .see-more-button {
     padding: 5px 5px;
     border-radius: 4px;
-    background-color: #98c9e8cf; 
+    background-color: #eca72cff; 
 }
 
 /* social media icons styling */
@@ -140,7 +161,7 @@ header h4{
     cursor: pointer;
 }
 .fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #378cd7;
+    color: #eca72cff;
 }
 .fab {
     color: #000000;
