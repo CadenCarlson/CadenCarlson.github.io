@@ -139,6 +139,12 @@ header h4{
     justify-content: center;
 }
 
+.pdf-Viewer {
+    justify-content: center;
+    width: 100vh;
+    height: auto;
+}
+
 .portfolioImage {
     width: 75vh;
 }
