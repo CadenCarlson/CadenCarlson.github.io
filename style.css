@@ -161,6 +161,31 @@ header h4{
     background-color: #eca72cff; 
 }
 
+.content_img{
+    position: relative;
+}
+
+.content_img div{
+    position: absolute;
+    top: 0;
+    height:auto;
+    background: black;
+    color: white;
+    margin-right: 11px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div{
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.9; 
+}
+
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
