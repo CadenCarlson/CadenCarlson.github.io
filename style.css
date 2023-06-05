@@ -120,29 +120,12 @@ header h4{
 .front {
   z-index: 1;
 }
-/*
-.behind-right {
-  z-index: -1;
-  position: absolute;
-  transform: translate(-10px);
-}
 
-.behind-left {
-  z-index: -1;
-  position: absolute;
-}
-*/
 /* skills section css */
 .skillDiv {
     height: 70vh;
     width: 70vh;
     justify-content: center;
-}
-
-.pdf-Viewer {
-    justify-content: center;
-    width: 100vh;
-    height: auto;
 }
 
 .portfolioImage {
@@ -161,6 +144,7 @@ header h4{
     background-color: #eca72cff; 
 }
 
+/* Book List Hover text */
 .content_img{
     position: relative;
 }
@@ -197,6 +181,7 @@ header h4{
 .fab {
     color: #000000;
 }
+
 /* footer styling */
 #footer {
     background-color: rgb(143, 151, 157);
