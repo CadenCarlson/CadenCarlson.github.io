@@ -52,11 +52,11 @@ function navbarHighlight() {
       lastHighlight.classList.add('text-white');
       NavbarSkills.classList.remove('text-white');
       lastHighlight = NavbarSkills;
-  } else if (LastScrollY >= 2200 && LastScrollY < 2800){
+  } else if (LastScrollY >= 2200 && LastScrollY < 3500){
       lastHighlight.classList.add('text-white');
       NavbarPortfolio.classList.remove('text-white');
       lastHighlight = NavbarPortfolio;
-  } else if (LastScrollY >= 2800 && LastScrollY < 3000){
+  } else if (LastScrollY >= 3500 && LastScrollY < 4000){
       lastHighlight.classList.add('text-white');
       NavbarContact.classList.remove('text-white');
       lastHighlight = NavbarContact;
