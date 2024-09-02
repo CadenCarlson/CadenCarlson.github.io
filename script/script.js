@@ -26,11 +26,11 @@ setTimeout(()=>{
             span.classList.add('fade');
         }, (idx + 1) * 25)
        })
-   }, 1);
+   }, 1000);
 
    setTimeout(()=>{
        intro.style.top = '-100vh';
-   }, 1)
+   }, 1000)
 })
 }
 
