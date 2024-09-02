@@ -113,6 +113,14 @@ header h4{
 }
 
 /* about section image css */
+.aboutTextBox {
+    margin: 10vh 8vh 10vh 8vh;
+    padding-top: 50px;
+    padding-right: 2vh;
+    padding-bottom: 50px;
+    padding-left: 2vh;
+}
+
 .imageAboutPage {
     width: 100%;
 }

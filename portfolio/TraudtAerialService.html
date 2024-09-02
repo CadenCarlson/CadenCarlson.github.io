@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Caden's Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+
+  <!-- linking css file -->
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Plot.ly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Icon -->
+  <link rel="icon" sizes="40x40" href="./img/CCicon.ico">
+</head>
+
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html#home">
+              Caden Carlson
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="../docs/Carlson_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Title -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Aircraft Maintenance</h1>
+                    <h4>Traudt Aerial Service</h4>
+                    <hr>
+                </div>
+                <div class="">
+                    <p>
+                        During the summer of 2024 I worked in the fast-paced world of aerial chemical application. Rediscovering my passion for aviation through 14-hour days of maintaining and loading some of the most incredible aircraft was exhilarating. I enjoyed the nitty-gritty work of dismantling, inspecting, and promptly reassembling each aircraft, as it gave me new insight into the processes that make such dynamic flight possible.
+                    <ul>
+                      <li>Aided in 100-hour inspections, oil changes for both piston and turbine engines, and propeller balances.</li>
+                      <li>Maintained two workhorse AT-802s, two agile AT-602s, a powerful AT-502XP, and a small but mighty PA-36.</li>
+                      <li>Excelled in the high pace, pit-stop-like environment of mixing and loading chemicals onto aircraft.</li>
+                      <li>Built a switchbox to control and organize a system of ten pumps.</li>
+                    </ul>
+                    </p>
+                </div>
+                <hr>
+                <div class="col-md-6">
+                    <img src="../img/Cleaning the engine bay.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Cleaning out the engine bay for a 100-hour inspection. This specific aircraft runs the PT6A-65 featuring an incredible reverse flow inlet and two-shaft system</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/Panels Off.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Torn down fuselage for cleaning and inspecting</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="../img/Waiting for Rain.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Rain kept us grounded but work didn't stop</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/Brave in front, XP in back 2.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Loading the Brave with XP flying in the background</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/Putting the Brave Away.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Backing the Brave back into the hanger</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../img/Switchbox.jpg" alt="" width="100%" height="">
+                    <div class="caption">
+                        <h6> </h6>
+                        <p>Finished switchbox</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <span><button class="see-more-button" style="float: left;"><a class="see-more" href="../index.html#portfolio" alt="broken link">Go Back to Portfolio</a></button></span>
+        <span><button class="see-more-button" style="float: right;"><a class="see-more" href="./animations.html" alt="broken link">Blender Animations</a></button></span>
+    </div>
+
+    <section id="contact"></section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <p>&copy; Caden Carlson 2023</p>
+    </footer>
+
+  <!-- load javascript after loading all html content -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
